@@ -1,3 +1,9 @@
-@import "/sass/reset.css";
+//normalize
+@import "./reset.css";
 
 @import "absracts/constans";
+
+@import "base/base";
+
+@import "layout/wrapper";
+@import"layout/header";
