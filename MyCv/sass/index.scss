@@ -1,9 +1,11 @@
 //normalize
-@import "./reset.css";
+@import"./reset.css";
 
-@import "absracts/constans";
+@import"absracts/constans";
 
-@import "base/base";
+@import"base/base";
 
-@import "layout/wrapper";
+@import"layout/wrapper";
 @import"layout/header";
+
+@import"pages/about"
