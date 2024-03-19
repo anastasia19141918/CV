@@ -112,6 +112,31 @@ li {
   transform: scale(1.2);
 }
 
+.footer__itemns {
+  display: flex;
+  margin: 0 0 30px 0;
+  padding: 0;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0 60px;
+}
+
+.footer__itemn {
+  transition: all 0.3s;
+}
+
+.footer__itemn:hover {
+  transform: scale(1.2);
+}
+
+.footer__link {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bolder;
+  line-height: 30px;
+  color: #5e2a3e;
+}
+
 .wrapper__about {
   display: flex;
   flex-direction: row;
@@ -230,7 +255,7 @@ li {
 
 .projects__img {
   position: relative;
-  width: 770px;
+  width: 790px;
   height: 400px;
   opacity: 0.7;
   box-shadow: 1px 0px 15px 0px rgba(0, 0, 0, 0.75);
@@ -246,6 +271,7 @@ li {
   font-weight: 900;
   color: #faa638;
   background-color: #000000;
+  border-radius: 5px;
 }
 
 .projects__pagination {
