@@ -57,12 +57,12 @@
   cursor: pointer;
   transition: 0.3s all;
   &_back {
-    background-image: url('../../img/Slaider-left.svg');
+    background-image: url('../img/Slaider-left.svg');
     background-repeat: no-repeat;
     background-size: 50px 80px;
   }
   &_next {
-    background-image: url('../../img/Slaider-right.svg');
+    background-image: url('../img/Slaider-right.svg');
     background-repeat: no-repeat;
     background-size: 50px 80px;
   }
