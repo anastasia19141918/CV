@@ -253,6 +253,14 @@ li {
   justify-content: center;
 }
 
+.projects__slaider {
+  display: none;
+}
+
+.projects__slaider_active {
+  display: block;
+}
+
 .projects__img {
   position: relative;
   width: 790px;
