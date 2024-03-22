@@ -21,6 +21,22 @@
   box-shadow: 1px 0px 15px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 1px 0px 15px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 0px 15px 0px rgba(0,0,0,0.75);
+  @include desktop-small {
+    width: 580px;
+    height: 400px;
+  }
+  @include mobale-big {
+    width: 480px;
+    height: 300px;
+  }
+  @include mobale {
+    width: 340px;
+    height: 220px;
+  }
+  @include mobale-small {
+    width: 285px;
+    height: 220px;
+  }
 }
 
 .projects__desk {
@@ -32,6 +48,22 @@
   color: #faa638;
   background-color: #000000;
   border-radius: 5px;
+  @include desktop-small {
+    margin: -250px 0px 0px 70px;
+  }
+
+  @include mobale-big {
+    margin: -200px 0px 0px 60px;
+    font-size: 40px;
+  }
+  @include mobale {
+    margin: -170px 0px 0px 70px;
+    font-size: 25px;
+  }
+  @include mobale-small {
+    margin: -150px 0px 0px 40px;
+    font-size: 20px;
+  }
 }
 
 .projects__pagination {
@@ -39,6 +71,9 @@
   flex-direction: row;
   justify-content: center;
   gap: 0 30px;
+  @include tablet-small {
+    display: none;
+  }
 }
 
 .projects__numns {

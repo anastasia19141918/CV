@@ -1,11 +1,26 @@
 .header {
   padding: 30px 10px;
+  @include desktop-small {
+    padding: 40px 30px;
+  }
+  @include tablet-big {
+    padding: 0px 30px;
+  }
+  @include mobale-small {
+    padding: 30px;
+  }
 }
 
 .wrapper__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @include desktop-big {
+    gap:0 20px;
+  }
+  @include desktop-small {
+    flex-direction: column-reverse;
+  }
 }
 
 .header__img {
@@ -16,6 +31,22 @@
   margin: 30px 0px 0px 15%;
   border-radius: 5px;
   border: 10px solid $color-number-slaider;
+  @include desktop-small {
+    margin: 80px 0px 20px 15%;
+  }
+  @include tablet-small {
+    margin: 50px 0px 20px 25%;
+  }
+  @include mobale-big {
+    margin: 50px 0px 50px 30px;
+  }
+  @include mobale {
+    height: 380px;
+    width: 250px;
+  }
+  @include mobale-small {
+    margin: 50px 0px 50px 0px;
+  }
 }
 
 .header__square {
@@ -25,6 +56,14 @@
   margin-left: 22%;
   background-color: $color-block;
   border-radius: 5px;
+  @include desktop-small {
+    margin-left: 17%;
+    height: 600px;
+    width: 520px;
+  }
+  @include tablet-small {
+    display: none;
+  }
 }
 
 .header__desk {
@@ -32,19 +71,55 @@
   padding: 5% 0 0 0;
   display: flex;
   flex-direction: column;
+  @include desktop-small {
+    text-align: center;
+  }
+  @include tablet-small {
+    text-align: left;
+  }
 }
+
 
 .header__title {
   width: 690px;
   margin: 0 0 20px 0;
   color: $color-title;
   font-size: 80px;
+  @include desktop-small {
+    margin: 0 0 10px 0;
+  }
+  @include tablet-small {
+    font-size: 60px;
+  }
+  @include mobale-big {
+    font-size: 45px;
+  }
+
+  @include mobale {
+    font-size: 30px;
+  }
 }
 
 .headr__profession {
   margin: 0 0 30% 0;
   color: $color-title;
   font-size: 40px;
+  @include desktop-small {
+    margin: 0 0 1% 0;
+  }
+  @include tablet-big {
+    margin: 0 0 5% 0;
+  }
+  @include mobale-big {
+    font-size: 35px;
+  }
+  @include mobale {
+    font-size: 25px;
+  }
+  @include mobale-small {
+    font-weight: 100;
+    margin-bottom: 30px;
+  }
 }
 
 .header__social {
@@ -53,6 +128,18 @@
   flex-direction: row;
   justify-content: flex-end;
   gap: 0 30px;
+  @include desktop-small {
+    padding-left: 23%;
+    justify-content:flex-end;
+  }
+  @include tablet-big {
+    padding-left: 17%;
+    justify-content:center;
+  }
+  @include tablet-small {
+    padding-left: 0;
+    justify-content: start;
+  }
 }
 
 .header__contri {
@@ -61,6 +148,12 @@
   font-weight: 200;
   cursor: pointer;
   transition: 0.2s;
+  @include desktop-small {
+    font-size: 35px;
+  }
+  @include mobale {
+    font-size: 25px;
+  }
 }
 
 .header__githab {
@@ -70,9 +163,22 @@
   background-image: url("../../img/github-mark.svg");
   background-size: 30px 30px;
   transition: 0.2s;
+  @include desktop-small {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+  }
+  @include mobale {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+  }
 }
 
 .header__githab:hover,.header__contri:hover {
   transform: scale(1.2);
+  @include desktop-small {
+    transform: none;
+  }
 } 
 
