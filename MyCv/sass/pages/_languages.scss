@@ -1,0 +1,23 @@
+.wrapper__languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0 20%;
+  @include tablet-small {
+    flex-direction:column-reverse;
+  }
+}
+
+.languages__itemns {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  gap: 20px 0px;
+}
+
+.languages__itemn {
+  font-size: 24px;
+  font-weight: 900;
+  color: #00193e;
+}

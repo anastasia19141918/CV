@@ -1,0 +1,17 @@
+//normalize
+@import"./reset.css";
+
+@import"absracts/constans";
+@import"absracts/mixin";
+
+@import"base/base";
+
+@import"layout/wrapper";
+@import"layout/header";
+@import"layout/footer";
+
+@import"pages/about";
+@import"pages/skils";
+@import"pages/edication";
+@import"pages/languages";
+@import"pages/progects";
