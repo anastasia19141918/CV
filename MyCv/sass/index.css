@@ -282,7 +282,7 @@ li {
   display: block;
   width: 30px;
   height: 30px;
-  background-image: url("../../img/github-mark.svg");
+  background-image: url("../img/github-mark.svg");
   background-size: 30px 30px;
   transition: 0.2s;
 }
