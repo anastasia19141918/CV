@@ -639,11 +639,6 @@ li {
   justify-content: center;
   gap: 0 30px;
 }
-@media (max-width: 690px) {
-  .projects__pagination {
-    display: none;
-  }
-}
 
 .projects__numns {
   display: flex;

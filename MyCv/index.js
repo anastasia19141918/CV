@@ -7,19 +7,21 @@ const imgNumber = document.getElementById('projects__numn_number');
 let index = 0;
 let number = '';
 
+
+
 function slaiderActive(n) {
-  imgItemns.forEach(function(el){
+  imgItemns.forEach(function (el) {
     el.classList.remove('projects__slaider_active');
   });
   imgItemns[n].classList.add('projects__slaider_active');
 
-  let numberSlaider = number = n+1;
+  let numberSlaider = number = n + 1;
   imgNumber.innerHTML = numberSlaider;
 };
 
-btnBack.addEventListener('click', function(){
-  if(index === 0) {
-    index = imgItemns.length -1;
+btnBack.addEventListener('click', function () {
+  if (index === 0) {
+    index = imgItemns.length - 1;
     slaiderActive(index);
   } else {
     index--;
@@ -28,8 +30,8 @@ btnBack.addEventListener('click', function(){
   }
 });
 
-btnNext.addEventListener('click', function(){
-  if(index === imgItemns.length -1) {
+btnNext.addEventListener('click', function () {
+  if (index === imgItemns.length - 1) {
     index = 0;
     slaiderActive(index);
   } else {
@@ -43,6 +45,11 @@ function currentSlaider() {
   imgCurrent.innerHTML = currentSlaider;
 }
 currentSlaider();
+
+
+
+
+
 
 
 
