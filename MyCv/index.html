@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./sass/index.css">
   <link rel="icon" href="./img/office.png">
-  <script src="./Gallery.js"></script>
   <title>CV</title>
 </head>
 <body>
@@ -84,71 +83,65 @@
     <section class="projects section">
       <div class="wrapper">
         <h2 class="projects__title title">PROGECTS</h3>
-        <div class="projects__slaiders" id="projects__slaiders">
 
-          <div class="projects__slaider projects__slaider_active">
-            <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFEPRESCHOOL2022Q4/plants/" class="projects__link">
-              <img src="./img/plants.jpg" alt="plants" class="projects__img">
-              <h4 class="projects__desk">Plant care website</h4>
-            </a>
-          </div>
+        <div class="projects__container" id="projects__container">
+          <div class="projects__slaiders" id="projects__slaiders">
 
-          <div class="projects__slaider">
-            <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFEPRESCHOOL/portfolio/random/game/" class="projects__link">
-              <img src="./img/game.jpg" alt="Memory Game" class="projects__img">
-              <h4 class="projects__desk">Memory Game</h4>
-            </a>
-          </div>
+            <div class="projects__slaider">
+              <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFEPRESCHOOL2022Q4/plants/" class="projects__link">
+                <img src="./img/plants.jpg" alt="plants" class="projects__img">
+              </a>
+            </div>
 
-          <div class="projects__slaider">
-            <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFEPRESCHOOL/portfolio/random/" class="projects__link">
-              <img src="./img/random.jpg" alt="Random" class="projects__img">
-              <h4 class="projects__desk">Random quotes</h4>
-            </a>
-          </div>
+            <div class="projects__slaider">
+              <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFEPRESCHOOL/portfolio/random/game/" class="projects__link">
+                <img src="./img/game.jpg" alt="Memory Game" class="projects__img">
+              </a>
+            </div>
 
-          <div class="projects__slaider">
-            <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFEPRESCHOOL2022Q4/museum/louvre/" class="projects__link">
-              <img src="./img/louvre.jpg" alt="Museum louvre" class="projects__img">
-              <h4 class="projects__desk">Museum louvre</h4>
-            </a>
-          </div>
+            <div class="projects__slaider">
+              <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFEPRESCHOOL/portfolio/random/" class="projects__link">
+                <img src="./img/random.jpg" alt="Random" class="projects__img">
+              </a>
+            </div>
 
-          <div class="projects__slaider">
-            <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFE2023Q4/coffee-house/" class="projects__link">
-              <img src="./img/coffee-house.jpg" alt="Coffee-house" class="projects__img">
-              <h4 class="projects__desk">Coffee shop website</h4>
-            </a>
-          </div>
+            <div class="projects__slaider">
+              <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFEPRESCHOOL2022Q4/museum/louvre/" class="projects__link">
+                <img src="./img/louvre.jpg" alt="Museum louvre" class="projects__img">
+              </a>
+            </div>
 
-          <div class="projects__slaider">
-            <a href="https://anastasia19141918.github.io/image-gallery/gallery/index.html" class="projects__link">
-              <img src="./img/image-gallery.jpg" alt="Image-gallery" class="projects__img">
-              <h4 class="projects__desk">Image-gallery</h4>
-            </a>
-          </div>
+            <div class="projects__slaider">
+              <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFE2023Q4/coffee-house/" class="projects__link">
+                <img src="./img/coffee-house.jpg" alt="Coffee-house" class="projects__img">
+              </a>
+            </div>
 
-          <div class="projects__slaider">
-            <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFE2023Q4/task/" class="projects__link">
-              <img src="./img/HANGMAN GAME.jpg" alt="hangman game" class="projects__img">
-              <h4 class="projects__desk">Hangman game</h4>
-            </a>
-          </div>
-        </div>
+            <div class="projects__slaider">
+              <a href="https://anastasia19141918.github.io/image-gallery/gallery/index.html" class="projects__link">
+                <img src="./img/image-gallery.jpg" alt="Image-gallery" class="projects__img">
+              </a>
+            </div>
 
-        <div class="projects__pagination">
-          <div class="projects__numns">
-            <span class="projects__numn" id="projects__numn_number">1</span>
-            <span class="projects__numn">||</span>
-            <span class="projects__numn" id="projects__numn_current"></span>
+            <div class="projects__slaider">
+              <a href="https://rolling-scopes-school.github.io/anastasia19141918-JSFE2023Q4/task/" class="projects__link">
+                <img src="./img/HANGMAN GAME.jpg" alt="hangman game" class="projects__img">
+              </a>
+            </div>
+ 
+            <div class="projects__slaider">
+              <a href="https://anastasia19141918.github.io/Library/" class="projects__link">
+                <img src="./img/BROOKLYN LIBRARY.jpg" alt="BROOKLYN LIBRARY" class="projects__img">
+              </a>
+            </div>
+
+
           </div>
-          <div class="projects__arrows">
-            <span class="projects__btn projects__btn_back" id="btn_back"></span>
-            <span class="projects__btn projects__btn_next" id="btn_next"></span>
-          </div>
-        </div>
-        
+        </div>  
       </div>
+    </section>
+    <section class="btn">
+      <div class="btn__progect" id="btn__progect"></div>
     </section>
   </main>
   <footer class="footer section">
@@ -163,6 +156,6 @@
       </ul>
     </div>
   </footer>
-  <script src="./index.js"></script>
+  <script src="./index.js"></script>-
 </body>
 </html>

@@ -1,27 +1,38 @@
+.projects {
+  background-color: #030303;
+}
+
+.projects__title {
+  color: $color-number-slaider;
+}
+
+.projects__container {
+  height: 590px;
+  overflow: hidden;
+  transition: .7s all;
+}
+
+.projects__container__active {
+  height: 1000px;
+  transition: .4s all;
+}
+
 .projects__slaiders {
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 0px;
 }
 
 .projects__slaider {
-  display: none;
-}
-
-.projects__slaider_active {
-  display: block;
+  width: 440px;
 }
 
 .projects__img {
   position: relative;
-  width: 790px;
-  height: 400px;
-  opacity: 0.7;
-  box-shadow: 1px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 1px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 0px 15px 0px rgba(0, 0, 0, 0.75);
-
+  width: 440px;
+  height: 250px;
   @include desktop-small {
     width: 580px;
     height: 400px;
@@ -43,81 +54,14 @@
   }
 }
 
-.projects__desk {
-  position: absolute;
-  margin: -300px 0px 0px 125px;
-  padding: 30px;
-  font-size: 50px;
-  font-weight: 900;
-  color: #faa638;
-  background-color: #000000;
-  border-radius: 5px;
 
-  @include desktop-small {
-    margin: -250px 0px 0px 70px;
-  }
 
-  @include mobale-big {
-    margin: -200px 0px 0px 60px;
-    font-size: 40px;
-  }
 
-  @include mobale {
-    margin: -170px 0px 0px 70px;
-    font-size: 25px;
-  }
 
-  @include mobale-small {
-    margin: -150px 0px 0px 40px;
-    font-size: 20px;
-  }
-}
 
-.projects__pagination {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 0 30px;
-}
 
-.projects__numns {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0 10px;
-}
 
-.projects__numn {
-  color: $color-title;
-  font-size: 30px;
-  font-weight: 900;
-}
 
-.projects__arrows {
-  display: flex;
-  flex-direction: row;
-}
 
-.projects__btn {
-  width: 50px;
-  height: 80px;
-  display: block;
-  cursor: pointer;
-  transition: 0.3s all;
 
-  &_back {
-    background-image: url('../img/Slaider-left.svg');
-    background-repeat: no-repeat;
-    background-size: 50px 80px;
-  }
 
-  &_next {
-    background-image: url('../img/Slaider-right.svg');
-    background-repeat: no-repeat;
-    background-size: 50px 80px;
-  }
-}
-
-.projects__btn:hover {
-  transform: scale(1.2);
-}
