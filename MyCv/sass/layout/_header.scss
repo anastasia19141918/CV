@@ -47,6 +47,10 @@
   @include mobale-small {
     margin: 50px 0px 50px 0px;
   }
+  @include modal-small-size {
+    height: 340px;
+    width: 220px;
+  }
 }
 
 .header__square {
@@ -98,6 +102,9 @@
   @include mobale {
     font-size: 30px;
   }
+  @include modal-small-size {
+    font-size: 25px;
+  }
 }
 
 .headr__profession {
@@ -119,6 +126,9 @@
   @include mobale-small {
     font-weight: 100;
     margin-bottom: 30px;
+  }
+  @include modal-small-size {
+    font-size: 20px;
   }
 }
 
@@ -154,6 +164,9 @@
   @include mobale {
     font-size: 25px;
   }
+  @include modal-small-size {
+    font-size: 20px;
+  }
 }
 
 .header__githab {
@@ -172,6 +185,11 @@
     width: 30px;
     height: 30px;
     background-size: 30px 30px;
+  }
+  @include modal-small-size {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
   }
 }
 

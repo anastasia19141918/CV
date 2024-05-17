@@ -4,16 +4,19 @@
 
 .projects__title {
   color: $color-number-slaider;
+  @include mobale-gallery {
+    font-size: 25px;
+  }
 }
 
 .projects__container {
-  height: 590px;
+  height: 500px;
   overflow: hidden;
-  transition: .7s all;
+  transition: .4s all;
 }
 
 .projects__container__active {
-  height: 1000px;
+  height: 100%;
   transition: .4s all;
 }
 
@@ -23,34 +26,59 @@
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 0px;
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 0px;
+  }
+  
+  @include tablet-big {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .projects__slaider {
   width: 440px;
+  @include tablet {
+    width: 340px;
+  }
+  @include tablet-big {
+    width: 510px;
+  }
+  @include mobale-big {
+    width: 360px;
+  }
+  @include mobale-gallery {
+    width: 280px;
+  }
+  @include mobale-small {
+    width: 210px;
+  }
 }
 
 .projects__img {
   position: relative;
   width: 440px;
   height: 250px;
-  @include desktop-small {
-    width: 580px;
-    height: 400px;
-  }
-
-  @include mobale-big {
-    width: 480px;
-    height: 300px;
-  }
-
-  @include mobale {
+  @include tablet {
     width: 340px;
-    height: 220px;
+    height: 200px;
+  }
+  @include tablet-big {
+    width: 510px;
+    height: 310px;
+  }
+  @include mobale-big {
+    width: 360px;
+    height: 190px;
   }
 
+  @include mobale-gallery {
+    width: 280px;
+    height: 140px;
+  }
   @include mobale-small {
-    width: 285px;
-    height: 220px;
+    width: 210px;
+    height: 120px;
   }
 }
 

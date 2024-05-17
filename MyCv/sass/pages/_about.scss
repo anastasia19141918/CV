@@ -25,6 +25,9 @@
     height: 200px;
     padding: 0;
   }
+  @include modal-small-size {
+    width: 220px;
+  }
 }
 
 .about__text {
@@ -33,6 +36,9 @@
   line-height: 30px;
   @include mobale {
     font-size: 20px;
+  }
+  @include modal-small-size {
+    font-size: 17px;
   }
 }
 

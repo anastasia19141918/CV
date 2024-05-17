@@ -20,4 +20,7 @@
   font-size: 24px;
   font-weight: 900;
   color: #00193e;
+  @include modal-small-size {
+    font-size: 16px;
+  }
 }
