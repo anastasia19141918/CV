@@ -46,6 +46,11 @@ li {
     font-size: 35px;
   }
 }
+@media (max-width: 344px) {
+  .title {
+    font-size: 20px;
+  }
+}
 
 .section {
   padding: 90px 30px 30px 30px;
@@ -136,6 +141,12 @@ li {
     margin: 50px 0px 50px 0px;
   }
 }
+@media (max-width: 344px) {
+  .header__img {
+    height: 340px;
+    width: 220px;
+  }
+}
 
 .header__square {
   position: absolute;
@@ -201,6 +212,11 @@ li {
     font-size: 30px;
   }
 }
+@media (max-width: 344px) {
+  .header__title {
+    font-size: 25px;
+  }
+}
 
 .headr__profession {
   margin: 0 0 30% 0;
@@ -231,6 +247,11 @@ li {
   .headr__profession {
     font-weight: 100;
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 344px) {
+  .headr__profession {
+    font-size: 20px;
   }
 }
 
@@ -277,6 +298,11 @@ li {
     font-size: 25px;
   }
 }
+@media (max-width: 344px) {
+  .header__contri {
+    font-size: 20px;
+  }
+}
 
 .header__githab {
   display: block;
@@ -298,6 +324,13 @@ li {
     width: 30px;
     height: 30px;
     background-size: 30px 30px;
+  }
+}
+@media (max-width: 344px) {
+  .header__githab {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
   }
 }
 
@@ -322,6 +355,11 @@ li {
   .footer__itemns {
     flex-direction: column;
     gap: 20px 0;
+  }
+}
+@media (max-width: 344px) {
+  .footer__itemns {
+    gap: 0px 0px;
   }
 }
 
@@ -358,6 +396,11 @@ li {
 @media (max-width: 360px) {
   .footer__link {
     font-size: 18px;
+  }
+}
+@media (max-width: 344px) {
+  .footer__link {
+    font-size: 15px;
   }
 }
 
@@ -397,6 +440,11 @@ li {
     padding: 0;
   }
 }
+@media (max-width: 344px) {
+  .about__desk {
+    width: 220px;
+  }
+}
 
 .about__text {
   margin: 0;
@@ -406,6 +454,11 @@ li {
 @media (max-width: 500px) {
   .about__text {
     font-size: 20px;
+  }
+}
+@media (max-width: 344px) {
+  .about__text {
+    font-size: 17px;
   }
 }
 
@@ -449,6 +502,11 @@ li {
 @media (max-width: 500px) {
   .skils__itemn {
     font-size: 20px;
+  }
+}
+@media (max-width: 344px) {
+  .skils__itemn {
+    font-size: 16px;
   }
 }
 
@@ -514,6 +572,11 @@ li {
   font-weight: 900;
   color: #191934;
 }
+@media (max-width: 344px) {
+  .edication__item {
+    font-size: 16px;
+  }
+}
 
 .square__block_edication {
   width: 320px;
@@ -549,6 +612,11 @@ li {
   font-weight: 900;
   color: #00193e;
 }
+@media (max-width: 344px) {
+  .languages__itemn {
+    font-size: 16px;
+  }
+}
 
 .projects {
   background-color: #030303;
@@ -557,15 +625,20 @@ li {
 .projects__title {
   color: #ffffff;
 }
+@media (max-width: 451px) {
+  .projects__title {
+    font-size: 25px;
+  }
+}
 
 .projects__container {
-  height: 590px;
+  height: 500px;
   overflow: hidden;
-  transition: 0.7s all;
+  transition: 0.4s all;
 }
 
 .projects__container__active {
-  height: 1000px;
+  height: 100%;
   transition: 0.4s all;
 }
 
@@ -576,9 +649,45 @@ li {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 0px;
 }
+@media (max-width: 1419px) {
+  .projects__slaiders {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .projects__slaiders {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .projects__slaider {
   width: 440px;
+}
+@media (max-width: 961px) {
+  .projects__slaider {
+    width: 340px;
+  }
+}
+@media (max-width: 768px) {
+  .projects__slaider {
+    width: 510px;
+  }
+}
+@media (max-width: 600px) {
+  .projects__slaider {
+    width: 360px;
+  }
+}
+@media (max-width: 451px) {
+  .projects__slaider {
+    width: 280px;
+  }
+}
+@media (max-width: 360px) {
+  .projects__slaider {
+    width: 210px;
+  }
 }
 
 .projects__img {
@@ -586,40 +695,51 @@ li {
   width: 440px;
   height: 250px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 961px) {
   .projects__img {
-    width: 580px;
-    height: 400px;
+    width: 340px;
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .projects__img {
+    width: 510px;
+    height: 310px;
   }
 }
 @media (max-width: 600px) {
   .projects__img {
-    width: 480px;
-    height: 300px;
+    width: 360px;
+    height: 190px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 451px) {
   .projects__img {
-    width: 340px;
-    height: 220px;
+    width: 280px;
+    height: 140px;
   }
 }
 @media (max-width: 360px) {
   .projects__img {
-    width: 285px;
-    height: 220px;
+    width: 210px;
+    height: 120px;
   }
 }
 
 .btn {
   padding: 30px 0px 0px 0px;
 }
+@media (max-width: 451px) {
+  .btn {
+    padding: 30px 0px 30px 0px;
+  }
+}
 
 .btn__progect {
   width: 60px;
   height: 60px;
   margin: auto;
-  background-image: url("../../MyCv/img/button-progect.png");
+  background-image: url("../img/button-progect.png");
   background-size: 60px 60px;
   background-repeat: no-repeat;
   cursor: pointer;

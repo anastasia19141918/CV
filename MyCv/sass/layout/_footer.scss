@@ -1,3 +1,5 @@
+
+
 .footer__itemns {
   display: flex;
   margin: 0 0 30px 0;
@@ -8,6 +10,9 @@
   @include tablet-big {
     flex-direction: column;
     gap: 20px 0;
+  }
+  @include modal-small-size {
+    gap: 0px 0px;
   }
 }
 
@@ -36,5 +41,8 @@
   }
   @include mobale-small {
     font-size: 18px;
+  }
+  @include modal-small-size {
+    font-size: 15px;
   }
 }
