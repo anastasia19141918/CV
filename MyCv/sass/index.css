@@ -693,7 +693,8 @@ li {
 .projects__img {
   position: relative;
   width: 440px;
-  height: 250px;
+  height: 220px;
+  border-radius: 5px;
 }
 @media (max-width: 961px) {
   .projects__img {
