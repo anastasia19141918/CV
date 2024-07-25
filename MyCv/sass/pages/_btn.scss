@@ -1,5 +1,6 @@
 .btn {
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0px 60px 0px;
+  background-color: $color-header-line;
   @include mobale-gallery {
     padding: 30px 0px 30px 0px;
   }

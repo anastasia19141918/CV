@@ -1,29 +1,33 @@
+.about {
+  padding: 0px 30px 80px 30px;
+  background-color: $color-header;
+}
+
 .wrapper__about {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 0 8%;
-  @include tablet-small {
-    flex-direction: column;
+  @include desktop-small {
+    padding: 10% 0px 0px 0px;
   }
+  
 }
 
 .about__desk {
   width: 520px;
-  height: 300px;
   padding: 40px 60px 60px 60px;
+  border-radius: 20px;
+  background-color: $color-about;
   @include tablet-small {
     width: 450px;
-    height: 150px;
     padding: 20px 60px 60px 60px;
   }
   @include mobale-big {
-    padding: 20px 60px 60px 0px;
+    padding: 20px 60px 60px 60px;
   }
   @include mobale {
     width: 320px;
-    height: 200px;
-    padding: 0;
+    padding: 20px 20px 20px 20px;
   }
   @include modal-small-size {
     width: 220px;
@@ -39,6 +43,9 @@
   }
   @include modal-small-size {
     font-size: 17px;
+  }
+  @include mobale-small {
+    margin-bottom: 20px;
   }
 }
 
