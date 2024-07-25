@@ -1,5 +1,6 @@
 .header {
-  padding: 30px 10px;
+  background-color: $color-header;
+  padding: 0px 0px 30px 0px;
   @include desktop-small {
     padding: 40px 30px;
   }
@@ -9,6 +10,13 @@
   @include mobale-small {
     padding: 30px;
   }
+}
+
+.header__line {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background-color: $color-header-line;
 }
 
 .wrapper__header {
@@ -29,9 +37,8 @@
   height: 520px;
   width: 320px;
   margin: 30px 0px 0px 15%;
-  border-radius: 5px;
-  border: 10px solid $color-number-slaider;
-  @include desktop-small {
+  border-radius: 20px;
+ @include desktop-small {
     margin: 80px 0px 20px 15%;
   }
   @include tablet-small {
@@ -53,26 +60,9 @@
   }
 }
 
-.header__square {
-  position: absolute;
-  height: 600px;
-  width: 520px;
-  margin-left: 22%;
-  background-color: $color-block;
-  border-radius: 5px;
-  @include desktop-small {
-    margin-left: 17%;
-    height: 600px;
-    width: 520px;
-  }
-  @include tablet-small {
-    display: none;
-  }
-}
-
 .header__desk {
   z-index: 7;
-  padding: 5% 0 0 0;
+  padding: 10% 0 0 0;
   display: flex;
   flex-direction: column;
   @include desktop-small {
@@ -87,7 +77,7 @@
 .header__title {
   width: 690px;
   margin: 0 0 20px 0;
-  color: $color-title;
+  color: $color-text;
   font-size: 80px;
   @include desktop-small {
     margin: 0 0 10px 0;
@@ -137,7 +127,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 0 30px;
+  gap: 0 10px;
   @include desktop-small {
     padding-left: 23%;
     justify-content:flex-end;
