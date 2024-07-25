@@ -1,6 +1,9 @@
 .footer {
   padding: 20px 0px 10px 0px;
   background-color: $color-header;
+  @include tablet-big {
+    padding: 20px 20px 10px 20px;
+  }
 }
 
 .footer__itemns {
@@ -37,7 +40,7 @@
   line-height: 30px;
   color: $color-footer;
   @include tablet-big {
-    font-size: 30px;
+    font-size: 25px;
   }
   @include mobale {
     font-size: 20px;

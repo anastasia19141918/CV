@@ -1,5 +1,9 @@
 .projects {
+  padding: 0px 0px 35px 0px;
   background-color: $color-header-line;
+  @include tablet-big {
+    padding: 0px 20px 35px 20px;
+  }
 }
 
 .projects__title {
@@ -28,11 +32,19 @@
   gap: 20px 20px;
   @include desktop {
     grid-template-columns: repeat(2, 0.2fr);
-    gap: 20px 0px;
+    gap: 20px 20px;
   }
-  
+
+  @include tablet {
+    gap: 60px 20px;
+  }
+
   @include tablet-big {
     grid-template-columns: repeat(1, 0.2fr);
+    gap: 70px 20px;
+  }
+  @include mobale-gallery-block {
+    gap: 20px 20px;
   }
 }
 
@@ -43,13 +55,18 @@
     width: 340px;
   }
   @include tablet-big {
-    width: 510px;
+    width: 410px;
+    height: 160px;
   }
   @include mobale-big {
     width: 360px;
   }
   @include mobale-gallery {
     width: 280px;
+  }
+  @include mobale-gallery-block {
+    width: 250px;
+    height: 160px;
   }
   @include mobale-small {
     width: 210px;
@@ -66,10 +83,7 @@
     width: 340px;
     height: 200px;
   }
-  @include tablet-big {
-    width: 510px;
-    height: 310px;
-  }
+  
   @include mobale-big {
     width: 360px;
     height: 190px;

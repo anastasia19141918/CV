@@ -14,12 +14,28 @@
   @media(max-width: $tablet) { @content; }
 }
 
+@mixin tablet-big-block {
+  @media(max-width: $tablet-block) { @content; }
+};
+
 @mixin tablet-big {
   @media(max-width: $tablet-big) { @content; }
 };
 
+@mixin tablet-big-line {
+  @media(max-width: $desktop-line) { @content; }
+};
+
+@mixin desktop-line-big {
+  @media(max-width: $desktop-line-big) { @content; }
+};
+
 @mixin tablet-small {
   @media(max-width: $tablet-small) { @content; }
+};
+
+@mixin tablet-small-block {
+  @media(max-width: $tablet-small-block) { @content; }
 };
 
 @mixin mobale-big {
@@ -33,6 +49,11 @@
 @mixin mobale-gallery {
   @media(max-width: $mobale-gallery) { @content; }
 }
+
+@mixin mobale-gallery-block {
+  @media(max-width: $mobale-gallery-block) { @content; }
+}
+
 
 @mixin mobale-small {
   @media(max-width: $mobale-small) { @content; }

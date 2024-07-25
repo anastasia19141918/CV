@@ -7,9 +7,10 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  @include tablet-small {
-    flex-direction: column;
+  @include desktop-small {
+    padding: 10% 0px 0px 0px;
   }
+  
 }
 
 .about__desk {
@@ -19,16 +20,14 @@
   background-color: $color-about;
   @include tablet-small {
     width: 450px;
-    height: 150px;
     padding: 20px 60px 60px 60px;
   }
   @include mobale-big {
-    padding: 20px 60px 60px 0px;
+    padding: 20px 60px 60px 60px;
   }
   @include mobale {
     width: 320px;
-    height: 200px;
-    padding: 0;
+    padding: 20px 20px 20px 20px;
   }
   @include modal-small-size {
     width: 220px;
@@ -44,6 +43,9 @@
   }
   @include modal-small-size {
     font-size: 17px;
+  }
+  @include mobale-small {
+    margin-bottom: 20px;
   }
 }
 

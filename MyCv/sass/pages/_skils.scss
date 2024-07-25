@@ -18,6 +18,12 @@
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
   gap: 10px 0;
+  @include mobale-gallery-block {
+    grid-template-columns: repeat(2, 0.4fr);
+  }
+  @include mobale-small {
+    grid-template-columns: repeat(2, 0.3fr);
+  }
 }
 
 .skils__itemn {
@@ -40,6 +46,36 @@
   position: absolute;
   margin-left: 70%;
   margin-top: -14%;
+  @include tablet-big-line {
+    margin-left: 70%;
+    margin-top: -16%;
+  }
+  @include desktop-line-big {
+    margin-left: 70%;
+    margin-top: -19%;
+  }
+  @include tablet {
+    margin-left: 70%;
+    margin-top: -23%;
+  }
+  @include tablet-big-block {
+    margin-top: -26%
+  }
+  @include tablet-big {
+    margin-left: 63%;
+    margin-top: -28%;
+  }
+  @include tablet-small {
+    margin-left: 60%;
+    margin-top: -30%;
+  }
+  @include tablet-small-block {
+    margin-left: 63%;
+    margin-top: -35%;
+  }
+  @include mobale-big {
+    display: none;
+  }
 }
 
 .skils__one {
