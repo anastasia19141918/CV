@@ -743,7 +743,7 @@ li {
 
 .projects__slaider {
   width: 310px;
-  height: 165px;
+  height: 170px;
 }
 @media (max-width: 961px) {
   .projects__slaider {
