@@ -14,24 +14,24 @@
 }
 
 .projects__container {
-  height: 420px;
+  height: 280px;
   overflow: hidden;
-  transition: .4s all;
+  opacity: 0.5;
+  transition: .3s opacity ease-out;
 }
 
 .projects__container__active {
   height: 100%;
-  transition: .4s all;
+  opacity: 1;
+  transition: .3s opacity ease-out;
 }
 
 .projects__slaiders {
-  margin-bottom: 30px;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 0.2fr);
+  grid-template-columns: repeat(2, 0.2fr);
   gap: 20px 20px;
   @include desktop {
-    grid-template-columns: repeat(2, 0.2fr);
     gap: 20px 20px;
   }
 
@@ -40,8 +40,8 @@
   }
 
   @include tablet-big {
-    grid-template-columns: repeat(1, 0.2fr);
-    gap: 70px 20px;
+    grid-template-columns: repeat(1, 0.1fr);
+    gap: 20px 20px;
   }
   @include mobale-gallery-block {
     gap: 20px 20px;
@@ -49,8 +49,8 @@
 }
 
 .projects__slaider {
-  width: 310px;
-  height: 170px;
+  width: 410px;
+  height: 220px;
   @include tablet {
     width: 340px;
   }
