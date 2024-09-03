@@ -701,26 +701,26 @@ li {
 }
 
 .projects__container {
-  height: 420px;
+  height: 280px;
   overflow: hidden;
-  transition: 0.4s all;
+  opacity: 0.5;
+  transition: 0.3s opacity ease-out;
 }
 
 .projects__container__active {
   height: 100%;
-  transition: 0.4s all;
+  opacity: 1;
+  transition: 0.3s opacity ease-out;
 }
 
 .projects__slaiders {
-  margin-bottom: 30px;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 0.2fr);
+  grid-template-columns: repeat(2, 0.2fr);
   gap: 20px 20px;
 }
 @media (max-width: 1419px) {
   .projects__slaiders {
-    grid-template-columns: repeat(2, 0.2fr);
     gap: 20px 20px;
   }
 }
@@ -731,8 +731,8 @@ li {
 }
 @media (max-width: 768px) {
   .projects__slaiders {
-    grid-template-columns: repeat(1, 0.2fr);
-    gap: 70px 20px;
+    grid-template-columns: repeat(1, 0.1fr);
+    gap: 20px 20px;
   }
 }
 @media (max-width: 396px) {
@@ -742,8 +742,8 @@ li {
 }
 
 .projects__slaider {
-  width: 310px;
-  height: 170px;
+  width: 410px;
+  height: 220px;
 }
 @media (max-width: 961px) {
   .projects__slaider {
@@ -810,7 +810,9 @@ li {
 }
 
 .btn {
-  padding: 30px 0px 60px 0px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px 60px 0px;
   background-color: #85aab2;
 }
 @media (max-width: 451px) {
@@ -820,13 +822,38 @@ li {
 }
 
 .btn__progect {
-  width: 60px;
-  height: 60px;
-  margin: auto;
-  background-image: url("../img/button-progect.png");
-  background-size: 60px 60px;
-  background-repeat: no-repeat;
+  padding: 10px 15px;
   cursor: pointer;
+  font-size: 30px;
+  border-radius: 5px;
+  background-color: #c57d60;
+}
+@media (max-width: 1000px) {
+  .btn__progect {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .btn__progect {
+    font-size: 20px;
+  }
+}
+@media (max-width: 659px) {
+  .btn__progect {
+    padding: 10px 25px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 500px) {
+  .btn__progect {
+    padding: 10px 35px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 396px) {
+  .btn__progect {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
