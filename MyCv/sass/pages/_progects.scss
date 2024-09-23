@@ -29,47 +29,35 @@
 .projects__slaiders {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(2, 0.2fr);
+  grid-template-columns: repeat(1, 0.2fr);
   gap: 20px 20px;
   @include desktop {
     gap: 20px 20px;
   }
 
   @include tablet {
-    gap: 60px 20px;
-  }
-
-  @include tablet-big {
-    grid-template-columns: repeat(1, 0.1fr);
-    gap: 20px 20px;
-  }
-  @include mobale-gallery-block {
-    gap: 20px 20px;
+    gap: 20px 0px;
   }
 }
 
 .projects__slaider {
-  width: 410px;
-  height: 220px;
-  @include tablet {
-    width: 340px;
+  width: 600px;
+  height: 320px;
+  @include tablet-small {
+    width: 400px;
+    height: 210px;
   }
-  @include tablet-big {
-    width: 410px;
-    height: 160px;
-  }
-  @include mobale-big {
-    width: 360px;
+  @include mobale {
+    width: 350px;
+    height: 220px;
   }
   @include mobale-gallery {
     width: 280px;
-  }
-  @include mobale-gallery-block {
-    width: 250px;
-    height: 160px;
+    height: 150px;
   }
   @include mobale-small {
-    width: 210px;
+    width: 200px;
+    height: 130px;
   }
 }
 
@@ -79,24 +67,6 @@
   height: 100%;
 
   border-radius: 5px;
-  @include tablet {
-    width: 340px;
-    height: 200px;
-  }
-  
-  @include mobale-big {
-    width: 360px;
-    height: 190px;
-  }
-
-  @include mobale-gallery {
-    width: 280px;
-    height: 140px;
-  }
-  @include mobale-small {
-    width: 210px;
-    height: 120px;
-  }
 }
 
 
