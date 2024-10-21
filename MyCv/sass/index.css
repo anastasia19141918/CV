@@ -4,7 +4,7 @@
 }
 
 .title {
-  margin: 0;
+  margin: 0 0 15px 0;
   color: #898DD9;
   font-size: 1.7rem;
 }
@@ -39,7 +39,7 @@ ul {
 
 .header__img {
   width: 320px;
-  height: 500px;
+  height: 530px;
   border-radius: 5%;
   border: 10px solid #c57d60;
 }
@@ -57,6 +57,37 @@ ul {
 .headr__profession {
   margin: 0;
   color: #307282;
+}
+
+.about-desk {
+  padding: 50px 0px 0px 0px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.itemn {
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.connection__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-size: 30px 30px;
+}
+.connection__link__githab {
+  background-image: url("../../img/github-mark.svg");
+}
+.connection__link__telegram {
+  background-image: url("../../img/telegram.png");
+}
+.connection__link__mail {
+  background-image: url("../../img/mail.png");
 }
 
 /*# sourceMappingURL=index.css.map */
