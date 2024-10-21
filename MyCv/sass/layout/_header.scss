@@ -1,230 +1,35 @@
 .header {
-  background-color: $color-header;
-  padding: 0px 0px 30.5px 0px;
-  
-  @include tablet-big {
-    padding: 0px 30px;
-  }
-  @include tablet-small {
-    padding: 30px;
-  }
-  @include mobale-small {
-    padding: 30px;
-  }
-}
-
-.header__line {
-  position: absolute;
-  width: 100%;
-  height: 15%;
-  background-color: $color-header-line;
-  @include desktop-small {
-    display: none;
-  }
+  background: url('../../img/img_1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .wrapper__header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  @include desktop-small {
-    padding: 0px 30px;
-  }
-  @include desktop-big {
-    gap:0 20px;
-  }
-  @include desktop-small {
-    flex-direction: column-reverse;
-  }
-  @include mobale-small {
-    padding: 0px 0px;
-  }
+  padding: 30px 0px;
+  justify-content: space-around;
+  align-items:flex-end;
+  align-self: flex-end;
 }
 
 .header__img {
-  position: relative;
-  z-index: 7;
-  height: 520px;
   width: 320px;
-  margin: 30px 0px 0px 15%;
-  border-radius: 20px;
- @include desktop-small {
-    margin: 80px 0px 20px 30%;
-  }
-  @include tablet-small {
-    margin: 40px 0px 20px 20%;
-  }
-  @include mobale-big {
-    height: 480px;
-    width: 290px;
-    margin: 50px 0px 50px 30px;
-  }
-  @include mobale {
-    height: 380px;
-    width: 250px;
-  }
-  @include mobale-gallery-block {
-    margin: 40px 0px 20px 5%;
-  }
-  @include mobale-small {
-    margin: 50px 0px 50px 0px;
-  }
-  @include modal-small-size {
-    height: 340px;
-    width: 220px;
-  }
-}
+  height: 500px;
+  border-radius: 5%;
+  border: 10px solid $color-border;
+};
 
 .header__desk {
-  z-index: 7;
-  padding: 10% 0 0 0;
-  display: flex;
-  flex-direction: column;
-  @include desktop-small {
-    padding: 0% 0 0 0;
-    text-align: center;
-  }
-  @include tablet-small {
-    text-align: left;
-  }
+  max-width: 310px;
 }
 
-
 .header__title {
-  width: 690px;
   margin: 0 0 20px 0;
-  color: $color-text;
-  font-size: 80px;
-  @include desktop-small {
-    text-align: left;
-    margin: 0 0 10px 0;
-  }
-  @include tablet-small {
-    font-size: 60px;
-  }
-  @include tablet-small-block {
-    font-size: 45px;
-  }
-  @include mobale-big {
-    font-size: 45px;
-  }
-
-  @include mobale {
-    font-size: 30px;
-  }
-  @include modal-small-size {
-    font-size: 25px;
-  }
+  color: $color-title;
+  font-size: 2.8rem;
 }
 
 .headr__profession {
-  margin: 0 0 30% 0;
-  color: $color-title;
-  font-size: 40px;
-  @include desktop-small {
-    text-align: left;
-    margin: 0 0 1% 0;
-  }
-  @include tablet-big {
-    margin: 0 0 5% 0;
-  }
-  @include tablet-small-block {
-    font-size: 30px;
-  }
-  @include mobale-big {
-    font-size: 35px;
-  }
-  @include mobale {
-    font-size: 25px;
-  }
-  @include mobale-small {
-    font-weight: 100;
-    margin-bottom: 30px;
-  }
-  @include modal-small-size {
-    font-size: 20px;
-  }
-}
-
-.header__social {
-  width: 470px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 0 10px;
-  @include desktop-small {
-    margin-left: -34%;
-    justify-content:flex-end;
-  }
-  @include tablet {
-    margin-left: -36%;
-  }
-  @include tablet-big-block {
-    margin-left: -41%;
-  }
-  @include tablet-big {
-    padding-left: 15%;
-    justify-content:center;
-  }
-  @include tablet-small {
-    padding-left: 40%;
-    justify-content: start;
-  }
-}
-
-.header__contri {
   margin: 0;
-  font-size: 25px;
-  font-weight: 200;
-  cursor: pointer;
-  transition: 0.2s;
-  @include desktop-small {
-    font-size: 35px;
-  }
-  @include tablet-small-block {
-    font-size: 30px;
-  }
-  @include mobale {
-    font-size: 25px;
-  }
-  @include modal-small-size {
-    font-size: 20px;
-  }
+  color: $color-border-title;
 }
-
-.header__githab {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/github-mark.svg");
-  background-size: 30px 30px;
-  transition: 0.2s;
-  @include desktop-small {
-    width: 40px;
-    height: 40px;
-    background-size: 40px 40px;
-  }
-  @include tablet-small-block {
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-  }
-  @include mobale {
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-  }
-  @include modal-small-size {
-    width: 20px;
-    height: 20px;
-    background-size: 20px 20px;
-  }
-}
-
-.header__githab:hover,.header__contri:hover {
-  transform: scale(1.2);
-  @include desktop-small {
-    transform: none;
-  }
-} 
-

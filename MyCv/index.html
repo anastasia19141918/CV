@@ -7,67 +7,75 @@
   <link rel="icon" href="./img/икон.ico">
   <title>CV</title>
 </head>
-<body>
+<body class="body">
   <header class="header">
-    <div class="header__line"></div> 
     <div class="wrapper wrapper__header">
-      <img src="./img/portfolio.jpg" alt="foto portfolio" class="header__img">
+      
+      <div class="header__imgs">
+        <img src="./img/portfolio.jpg" alt="foto portfolio" class="header__img">
+      </div>
+     
       <div class="header__desk">
         <h1 class="header__title"> Anastasiya Kazakova</h1>
         <h2 class="headr__profession">Junior Frontend Developer</h2>
-        <div class="header__social">
-          <!--<span class="header__linkendin">linkedin</span>-->
-          <a href="https://github.com/anastasia19141918"><span class="header__githab"></span></a>
-          <span class="header__contri">Belarus</span>
-        </div>
       </div>
+     
     </div>
   </header>
   <main>
-    <section class="about section">
-      <div class="wrapper wrapper__about">
-        <div class="about__desk">
-           <h2 class="about__title title">About me</h3>
-           <p class="about__text">
-            Hello, recently started studying front-end. It is not easy:( 
-            But I’m trying. I work well in a team. Ready to study a lot:)
-          </p>
-        </div>
-      </div>
-    </section>
+    <section class="about">
+      <section class="about-desk">
 
-    <section class="skils section">
-      <div class="wrapper wrapper__skils">
-        <div class="skils__disc">
-          <h2 class="skils__title title">Hard skills</h2>
-          <ul class="skils__itemns">
-            <li class="skils__itemn">JavaScript</li>
-            <li class="skils__itemn">HTML, CSS</li>
-            <li class="skils__itemn">Sass</li>
-            <li class="skils__itemn">BEM</li>
-            <li class="skils__itemn">Git</li>
-            <li class="skils__itemn">Figma</li>
-          </ul>
-        </div>
-        <div class="skils__block">
-          <div class="skils__one"></div>
-          <div class="skils__second"></div>
-        </div>
-      </div>
+        <section class="connection section">
+          <div class="wrapper wrapper__connection">
+            <h2 class="connection title">Connection</h2>
+            <ul class="connection__itemns">
+              <li class="connection__itemn"><a href="https://github.com/anastasia19141918" class="connection__link connection__link_githab"></a></li>
+              <li class="connection__itemn"><a href="https://t.me/tutayshaya1066" class="connection__link connection__link_telegram"></a></li>
+              <li class="connection__itemn"><a href="href=mailto:anastasiya.anast.ru@mail.ru" class="connection__link connection__link_mail"></a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="skils section">
+          <div class="wrapper wrapper__skils">
+            <div class="skils__desc">
+              <h2 class="skils__title title">Hard skills</h2>
+              <ul class="skils__itemns">
+                <li class="skils__itemn">JavaScript</li>
+                <li class="skils__itemn">HTML, CSS</li>
+                <li class="skils__itemn">Sass</li>
+                <li class="skils__itemn">BEM</li>
+                <li class="skils__itemn">Git</li>
+                <li class="skils__itemn">Figma</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="edication section">
+          <div class="wrapper wrapper__edication">
+            <div class="edication__des ">
+              <h2 class="edication__title title">Edication</h2>
+              <ul class="edication__itemns">
+                <li class="edication__item">Francysk Skaryna Gomel State University (History department)</li>
+                <li class="edication__item">The Rolling Scopes School:JS / FRONT-END.</li>
+                <li class="edication__item">HTML Academy:Tasks</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </section>
+      <section class="about-progect">
+
+      </section>
     </section>
+    <!--
+
     
-    <section class="edication section">
-      <div class="wrapper wrapper__edication">
-        <div class="edication__des ">
-          <h2 class="edication__title title">Edication</h2>
-          <ul class="edication__itemns">
-            <li class="edication__item">Francysk Skaryna Gomel State University (History department)</li>
-            <li class="edication__item">The Rolling Scopes School:JS / FRONT-END.</li>
-            <li class="edication__item">HTML Academy:Tasks</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    
+    
     <section class="projects section">
       <div class="wrapper">
         <h2 class="projects__title title">PROGECTS</h3>
@@ -117,18 +125,11 @@
     </section>
     <section class="btn">
       <button class="btn__progect" id="btn__progect">PROGECTS</button>
-    </section>
+    </section>-->
   </main>
   <footer class="footer section">
     <div class="wrapper">
-      <ul class="footer__itemns">
-        <li class="footer__itemn">
-          <a href="mailto:anastasiya.anast.ru@mail.ru" class="footer__link">Email:anastasiya.anast.ru@mail.ru</a>
-        </li>
-        <li class="footer__itemn">
-          <a href="https://t.me/tutayshaya1066" class="footer__link">Telegram:tutayshaya1066</a>
-        </li>
-      </ul>
+     
     </div>
   </footer>
   <script src="./index.js"></script>-
