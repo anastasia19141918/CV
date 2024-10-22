@@ -42,6 +42,10 @@
   @media(max-width: $mobale-big) { @content; }
 };
 
+@mixin mobale-header {
+  @media(max-width: $mobale-header) { @content; }
+};
+
 @mixin mobale {
   @media(max-width: $mobale) { @content; }
 };

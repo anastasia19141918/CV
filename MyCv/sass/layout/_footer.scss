@@ -1,5 +1,12 @@
 .footer {
-  padding: 20px 0px;
+  padding: 20px 10px;
+  @include mobale-header {
+    display: grid;
+    align-items: center;
+  }
+  @include mobale-gallery-block {
+    padding: 10px 10px;
+  }
 }
 
 .footer__itemns {

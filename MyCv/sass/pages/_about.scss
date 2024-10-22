@@ -3,19 +3,35 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 0px 10px;
+  gap: 10px;
+  @include mobale {
+    flex-direction: column;
+  }
 }
 
 .about-desk {
   padding: 50px 0px 0px 0px;
+  @include mobale-gallery-block {
+    padding: 10px 0px 0px 0px;
+  }
 };
 
 .section {
   margin-bottom: 50px;
+  @include mobale {
+    margin-bottom: 10px;
+  }
 };
 
 .itemn {
   margin-bottom: 5px;
   color: $color-itemn;
   font-size: 1.2rem;
+  @include mobale-gallery-block {
+    font-size: 1.0rem;
+  }
 };
+
+
 

@@ -6,6 +6,15 @@
   margin: 0 0 15px 0;
   color: $color-section-title;
   font-size: 1.7rem;
+  @include mobale {
+    text-align: center;
+  }
+  @include mobale-gallery-block {
+    font-size: 1.4rem;
+  }
+  @include modal-small-size {
+    font-size: 1.3rem;
+  }
 };
 
 li {

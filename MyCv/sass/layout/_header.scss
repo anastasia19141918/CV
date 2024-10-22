@@ -2,6 +2,15 @@
   background: url('../../img/img_1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  @include mobale-header {
+    background-size: auto 450px;
+  }
+  @include mobale-gallery-block {
+    background-size: auto 390px;
+  }
+  @include modal-small-size {
+    background-size: auto 300px;
+  }
 }
 
 .wrapper__header {
@@ -10,13 +19,39 @@
   justify-content: space-around;
   align-items:flex-end;
   align-self: flex-end;
+  @include tablet-small {
+    align-items: center;
+    gap: 10px;
+  }
+  @include mobale-header {
+    padding: 10px 10px;
+  }
 }
 
 .header__img {
   width: 320px;
-  height: 530px;
+  height: 420px;
   border-radius: 5%;
   border: 10px solid $color-border;
+  @include mobale-header {
+    width: 220px;
+    height: 390px;
+  }
+  @include mobale {
+    width: 180px;
+    height: 310px;
+    border: 5px solid $color-border;
+  }
+  @include mobale-gallery-block {
+    width: 180px;
+    height: 210px;
+    border: 3px solid $color-border;
+  }
+  @include modal-small-size {
+    width: 140px;
+    height: 160px;
+    border: 2px solid $color-border
+  }
 };
 
 .header__desk {
@@ -27,9 +62,30 @@
   margin: 0 0 20px 0;
   color: $color-title;
   font-size: 2.8rem;
+  @include mobale-header {
+    font-size: 2.2rem;
+  }
+  @include mobale {
+    font-size: 1.9rem;
+  }
+  @include mobale-gallery-block {
+    font-size: 1.6rem;
+  }
+  @include modal-small-size {
+    font-size: 1.3rem;
+  }
 }
 
 .headr__profession {
   margin: 0;
   color: $color-border-title;
+  @include mobale {
+    font-size: 1.4rem;
+  }
+  @include mobale-gallery-block {
+    font-size: 1.2rem;
+  }
+  @include modal-small-size {
+    font-size: 1.0rem;
+  }
 }
