@@ -113,12 +113,12 @@ ul {
 .progect__itemns {
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
-  gap: 20px 20px;
+  gap: 10px 10px;
 }
 
 .projects__img {
-  width: 200px;
-  height: 110px;
+  width: 150px;
+  height: 70px;
 }
 
 /*# sourceMappingURL=index.css.map */
