@@ -1,72 +1,31 @@
-.projects {
-  padding: 0px 0px 35px 0px;
-  background-color: $color-header-line;
-  @include tablet-big {
-    padding: 0px 20px 35px 20px;
-  }
-}
-
-.projects__title {
-  color: $color-number-slaider;
-  @include mobale-gallery {
-    font-size: 25px;
-  }
-}
-
-.projects__container {
-  height: 280px;
-  overflow: hidden;
-  opacity: 0.5;
-  transition: .3s opacity ease-out;
-}
-
-.projects__container__active {
-  height: 100%;
-  opacity: 1;
-  transition: .3s opacity ease-out;
-}
-
-.projects__slaiders {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(1, 0.2fr);
-  gap: 20px 20px;
-  @include desktop {
-    gap: 20px 20px;
-  }
-
-  @include tablet {
-    gap: 20px 0px;
-  }
-}
-
-.projects__slaider {
-  width: 600px;
-  height: 320px;
-  @include tablet-small {
-    width: 400px;
-    height: 210px;
-  }
+.progect {
+  padding: 50px 0px 0px 0px;
   @include mobale {
-    width: 350px;
-    height: 220px;
+    padding: 10px 0px 0px 0px;
   }
-  @include mobale-gallery {
-    width: 280px;
-    height: 150px;
-  }
-  @include mobale-small {
-    width: 200px;
-    height: 130px;
+};
+
+.progect__itemns {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  gap: 10px 10px;
+  @include mobale {
+    grid-template-columns: repeat(2, 0.3fr);
+    justify-content: center;
+    gap: 15px 15px;
+  };
+  @include modal-small-size {
+    gap: 5px 5px;
   }
 }
 
 .projects__img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-
-  border-radius: 5px;
+  width: 150px;
+  height: 80px;
+  @include mobale-gallery-block {
+    width: 130px;
+    height: 80px;
+  }
 }
 
 

@@ -1,0 +1,17 @@
+.connection__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-size: 30px 30px;
+  &__githab {
+    background-image: url('../../img/github-mark.svg');
+  };
+  &__telegram {
+    background-image: url('../../img/telegram.png');
+  };
+  &__mail {
+    background-image: url('../../img/mail.png');
+  }
+};
+
