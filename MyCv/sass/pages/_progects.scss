@@ -7,7 +7,7 @@
 
 .progect__itemns {
   display: grid;
-  grid-template-columns: repeat(2, 0.5fr);
+  grid-template-columns: repeat(3, 0.5fr);
   gap: 10px 10px;
   @include mobale {
     grid-template-columns: repeat(2, 0.3fr);
@@ -20,11 +20,11 @@
 }
 
 .projects__img {
-  width: 150px;
-  height: 80px;
+  width: 120px;
+  height: 180px;
   @include mobale-gallery-block {
     width: 130px;
-    height: 80px;
+    height: 180px;
   }
 }
 
