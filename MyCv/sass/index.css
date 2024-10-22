@@ -253,7 +253,7 @@ ul {
 
 .progect__itemns {
   display: grid;
-  grid-template-columns: repeat(2, 0.5fr);
+  grid-template-columns: repeat(3, 0.5fr);
   gap: 10px 10px;
 }
 @media (max-width: 500px) {
@@ -270,13 +270,13 @@ ul {
 }
 
 .projects__img {
-  width: 150px;
-  height: 80px;
+  width: 120px;
+  height: 180px;
 }
 @media (max-width: 396px) {
   .projects__img {
     width: 130px;
-    height: 80px;
+    height: 180px;
   }
 }
 
