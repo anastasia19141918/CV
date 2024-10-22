@@ -39,7 +39,7 @@ ul {
 }
 
 .header {
-  background: url("../../img/img_1.jpg");
+  background: url("../img/img_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
