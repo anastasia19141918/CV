@@ -1,10 +1,17 @@
+
+.about__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .about-desk {
   padding: 50px 0px 0px 0px;
-}
+};
 
 .section {
   margin-bottom: 50px;
-}
+};
 
 .itemn {
   margin-bottom: 5px;

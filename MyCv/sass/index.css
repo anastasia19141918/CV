@@ -59,6 +59,22 @@ ul {
   color: #307282;
 }
 
+.footer {
+  padding: 20px 0px;
+}
+
+.footer__itemns {
+  display: flex;
+  flex-direction: row;
+  gap: 0px 10px;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .about-desk {
   padding: 50px 0px 0px 0px;
 }
@@ -88,6 +104,21 @@ ul {
 }
 .connection__link__mail {
   background-image: url("../../img/mail.png");
+}
+
+.progect {
+  padding: 50px 0px 0px 0px;
+}
+
+.progect__itemns {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  gap: 20px 20px;
+}
+
+.projects__img {
+  width: 200px;
+  height: 110px;
 }
 
 /*# sourceMappingURL=index.css.map */

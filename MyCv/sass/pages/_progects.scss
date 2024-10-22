@@ -1,4 +1,17 @@
+.progect {
+  padding: 50px 0px 0px 0px;
+};
 
+.progect__itemns {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  gap: 20px 20px;
+}
+
+.projects__img {
+  width: 200px;
+  height: 110px;
+}
 
 
 
