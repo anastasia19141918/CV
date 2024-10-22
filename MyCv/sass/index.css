@@ -233,13 +233,13 @@ ul {
   background-size: 30px 30px;
 }
 .connection__link__githab {
-  background-image: url("../../img/github-mark.svg");
+  background-image: url("../img/github-mark.svg");
 }
 .connection__link__telegram {
-  background-image: url("../../img/telegram.png");
+  background-image: url("../img/telegram.png");
 }
 .connection__link__mail {
-  background-image: url("../../img/mail.png");
+  background-image: url("../img/mail.png");
 }
 
 .progect {
