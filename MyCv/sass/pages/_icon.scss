@@ -2,16 +2,16 @@
   display: block;
   width: 30px;
   height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   background-size: 30px 30px;
-  &__githab {
-    background-image: url('../img/github-mark.svg');
+  &_githab {
+    background-image: url('../../img/github.png');
   };
-  &__telegram {
-    background-image: url('../img/telegram.png');
+  &_telegram {
+    background-image: url('../../img/telegram.png');
   };
-  &__mail {
-    background-image: url('../img/mail.png');
+  &_mail {
+    background-image: url('../../img/mail.png');
   }
 };
 

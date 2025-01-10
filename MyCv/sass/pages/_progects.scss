@@ -1,31 +1,64 @@
+
 .progect {
-  padding: 50px 0px 0px 0px;
-  @include mobale {
-    padding: 10px 0px 0px 0px;
-  }
+  padding: 3% 5% 0 0;
+  margin: 0 0 6% 50%;
+  @include desktop-small {
+    padding: 6% 0% 0 0;
+    margin: 0 0 6% 0%;
+  };
 };
+
+.title__progect {
+  @include desktop-small {
+    text-align: center;
+  };
+}
 
 .progect__itemns {
   display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-columns: repeat(3, 0.1fr);
   gap: 10px 10px;
+  @include desktop-small {
+    grid-template-columns: repeat(3, 0.3fr);
+    gap: 20px 20px;
+  };
+  @include mobale-header {
+    gap: 8px 8px;
+  };
   @include mobale {
     grid-template-columns: repeat(2, 0.3fr);
-    justify-content: center;
     gap: 15px 15px;
   };
-  @include modal-small-size {
-    gap: 5px 5px;
+  @include mobale-small {
+    grid-template-columns: repeat(1, 0.3fr);
   }
-}
+};
+
+.projects__slaider {
+  display: flex;
+  gap: 0 30px;
+  cursor: pointer;
+};
 
 .projects__img {
-  width: 120px;
-  height: 180px;
-  @include mobale-gallery-block {
-    width: 130px;
-    height: 180px;
+  width: 151px;
+  height: 220px;
+  border-radius: 5px;
+  @include mobale-small {
+    width: 170px;
+    height: 280px;
   }
+};
+
+.projects__desk-title {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+  text-transform: capitalize
+};
+
+.projects__desk-text {
+  margin: 0 0 0 0;
+  font-size: 1.2rem;
 }
 
 
