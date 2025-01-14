@@ -1,70 +1,72 @@
+@use '../absracts/media'as r;
+
 @mixin desktop {
-  @media(max-width: $desktop) { @content; }
+  @media(max-width: r.$desktop) { @content; }
 }
 
 @mixin desktop-big {
-  @media(max-width: $desktop-big) { @content; }
+  @media(max-width: r.$desktop-big) { @content; }
 };
 
 @mixin desktop-small {
-  @media(max-width: $desktop-small) { @content; }
+  @media(max-width: r.$desktop-small) { @content; }
 };
 
 @mixin tablet {
-  @media(max-width: $tablet) { @content; }
+  @media(max-width: r.$tablet) { @content; }
 }
 
 @mixin tablet-big-block {
-  @media(max-width: $tablet-block) { @content; }
+  @media(max-width: r.$tablet-block) { @content; }
 };
 
 @mixin tablet-big {
-  @media(max-width: $tablet-big) { @content; }
+  @media(max-width: r.$tablet-big) { @content; }
 };
 
 @mixin tablet-big-line {
-  @media(max-width: $desktop-line) { @content; }
+  @media(max-width: r.$desktop-line) { @content; }
 };
 
 @mixin desktop-line-big {
-  @media(max-width: $desktop-line-big) { @content; }
+  @media(max-width: r.$desktop-line-big) { @content; }
 };
 
 @mixin tablet-small {
-  @media(max-width: $tablet-small) { @content; }
+  @media(max-width: r.$tablet-small) { @content; }
 };
 
 @mixin tablet-small-block {
-  @media(max-width: $tablet-small-block) { @content; }
+  @media(max-width: r.$tablet-small-block) { @content; }
 };
 
 @mixin mobale-big {
-  @media(max-width: $mobale-big) { @content; }
+  @media(max-width: r.$mobale-big) { @content; }
 };
 
 @mixin mobale-header {
-  @media(max-width: $mobale-header) { @content; }
+  @media(max-width: r.$mobale-header) { @content; }
 };
 
 @mixin mobale {
-  @media(max-width: $mobale) { @content; }
+  @media(max-width: r.$mobale) { @content; }
 };
 
 @mixin mobale-gallery {
-  @media(max-width: $mobale-gallery) { @content; }
+  @media(max-width: r.$mobale-gallery) { @content; }
 }
 
 @mixin mobale-gallery-block {
-  @media(max-width: $mobale-gallery-block) { @content; }
+  @media(max-width: r.$mobale-gallery-block) { @content; }
 }
 
 
 @mixin mobale-small {
-  @media(max-width: $mobale-small) { @content; }
+  @media(max-width: r.$mobale-small) { @content; }
 };
 
 @mixin modal-small-size {
-  @media(max-width: $modal-small-size) { @content; }
+  @media(max-width: r.$modal-small-size) { @content; }
 }
 
 

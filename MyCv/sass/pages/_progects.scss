@@ -1,15 +1,18 @@
 
+@use '../absracts/mixin' as m;
+@use '../absracts/constans' as c;
+
 .progect {
   padding: 3% 5% 0 0;
   margin: 0 0 6% 50%;
-  @include desktop-small {
+  @include m.desktop-small {
     padding: 6% 0% 0 0;
     margin: 0 0 6% 0%;
   };
 };
 
 .title__progect {
-  @include desktop-small {
+  @include m.desktop-small {
     text-align: center;
   };
 }
@@ -18,18 +21,18 @@
   display: grid;
   grid-template-columns: repeat(3, 0.1fr);
   gap: 10px 10px;
-  @include desktop-small {
+  @include m.desktop-small {
     grid-template-columns: repeat(3, 0.3fr);
     gap: 20px 20px;
   };
-  @include mobale-header {
+  @include m.mobale-header {
     gap: 8px 8px;
   };
-  @include mobale {
+  @include m.mobale {
     grid-template-columns: repeat(2, 0.3fr);
     gap: 15px 15px;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     grid-template-columns: repeat(1, 0.3fr);
   }
 };
@@ -44,7 +47,7 @@
   width: 151px;
   height: 220px;
   border-radius: 5px;
-  @include mobale-small {
+  @include m.mobale-small {
     width: 170px;
     height: 280px;
   }

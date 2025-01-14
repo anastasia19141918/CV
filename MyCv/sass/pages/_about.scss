@@ -1,9 +1,12 @@
+@use '../absracts/mixin' as m;
+@use '../absracts/constans' as c;
+
 .about-desk {
   display: flex;
   flex-direction: column;
   padding: 6% 5% 0 0;
   margin-left: 50%;
-  @include desktop-small {
+  @include m.desktop-small {
     margin-left: 10%;
   };
 };
@@ -12,24 +15,24 @@
   width: 100%;
   margin: 0 0 30px 0;
   font-size: 1.5rem;
-  color: $color-text;
-  @include mobale-header {
+  color: c.$color-text;
+  @include m.mobale-header {
     font-size: 1.2rem;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     font-size: 1.0rem;
   }
 };
 
 .itemn {
   margin: 0 0 5px 20px;
-  color: $color-text;
+  color: c.$color-text;
   font-size: 1.2rem;
   font-weight: 600;
-  @include mobale-header {
+  @include m.mobale-header {
     font-size: 1.2rem;
   };
-  @include mobale {
+  @include m.mobale {
     font-size: 1.0rem;
     font-weight: 300;
   }

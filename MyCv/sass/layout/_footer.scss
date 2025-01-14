@@ -1,10 +1,12 @@
+@use '../absracts/mixin' as m;
+
 .footer {
   padding: 20px 10px;
-  @include mobale-header {
+  @include m.mobale-header {
     display: grid;
     align-items: center;
   }
-  @include mobale-gallery-block {
+  @include m.mobale-gallery-block {
     padding: 10px 10px;
   }
 }

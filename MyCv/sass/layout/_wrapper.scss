@@ -1,4 +1,6 @@
+@use '../absracts/constans' as c;
+
 .wrapper {
-  max-width: $conten-width;
+  max-width: c.$conten-width;
   margin: auto;
 }
