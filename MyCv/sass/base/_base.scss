@@ -1,27 +1,22 @@
 .body {
-  background-color: $color-body;
+  background: linear-gradient($color-body-gradient-top, $color-body-gradient-center, $color-body-gradient-bottom);
+  background-repeat: no-repeat;
+  background-size: contain;
 };
 
-.title {
-  margin: 0 0 15px 0;
-  color: $color-section-title;
-  font-size: 1.7rem;
-  @include mobale {
-    text-align: center;
-  }
-  @include mobale-gallery-block {
-    font-size: 1.4rem;
-  }
-  @include modal-small-size {
-    font-size: 1.3rem;
-  }
-};
 
-li {
-  list-style-type: none;
-};
 
 ul {
   padding: 0;
   margin: 0;
+};
+
+.title {
+  margin: 0 0 20px 0;
+  font-size: 2.0rem;
+  color: $color-section-title;
+  text-transform: capitalize;
+  @include mobale-header {
+    font-size: 1.6rem;
+  }
 }
