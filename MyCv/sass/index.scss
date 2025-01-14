@@ -1,15 +1,15 @@
 //normalize
-@import"./reset.css";
+@use"./reset.css";
 
-@import"absracts/constans";
-@import"absracts/mixin";
+@use"absracts/constans";
+@use"absracts/mixin";
 
-@import"base/base";
+@use"base/base";
 
-@import"layout/wrapper";
-@import"layout/header";
+@use"layout/wrapper";
+@use"layout/header";
 
 
-@import"pages/about";
-@import"pages/icon";
-@import"pages/progects";
+@use"pages/about";
+@use"pages/icon";
+@use"pages/progects";

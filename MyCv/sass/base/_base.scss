@@ -1,5 +1,8 @@
+@use '../absracts/constans' as c;
+@use '../absracts/mixin' as m;
+
 .body {
-  background: linear-gradient($color-body-gradient-top, $color-body-gradient-center, $color-body-gradient-bottom);
+  background: linear-gradient(c.$color-body-gradient-top, c.$color-body-gradient-center, c.$color-body-gradient-bottom);
   background-repeat: no-repeat;
   background-size: contain;
 };
@@ -14,9 +17,9 @@ ul {
 .title {
   margin: 0 0 20px 0;
   font-size: 2.0rem;
-  color: $color-section-title;
+  color: c.$color-section-title;
   text-transform: capitalize;
-  @include mobale-header {
+  @include m.mobale-header {
     font-size: 1.6rem;
   }
 }
