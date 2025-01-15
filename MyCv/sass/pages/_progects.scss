@@ -43,26 +43,47 @@
   cursor: pointer;
 };
 
-.projects__img {
+.projects__link {
   width: 151px;
   height: 220px;
   border-radius: 5px;
+  text-decoration: none;
   @include m.mobale-small {
     width: 170px;
     height: 280px;
+  };
+  &_img {
+    background-color: c.$color-progect-first;
+  };
+  &_task {
+    background-color: c.$color-progect-third;
+  };
+  &_songbird {
+    background-color: c.$color-progect-sixth; 
+  };
+  &_art-quiz {
+    background-color: c.$color-progect-second;
+  };
+  &_eco-sounds {
+    background-color: c.$color-progect-fourth;
+  };
+  &_christmas-shop {
+    background-color: c.$color-progect-fifth;
   }
 };
 
-.projects__desk-title {
-  margin: 0 0 10px 0;
-  font-size: 1.8rem;
-  text-transform: capitalize
-};
-
-.projects__desk-text {
-  margin: 0 0 0 0;
-  font-size: 1.2rem;
+.projects__link__title {
+  padding: 60% 0 0 10%;
+  font-size: 1.4rem;
+  color: c.$color-progect-title;
+  text-transform: uppercase;
+  @include m.mobale {
+    padding: 60% 0 0 5%;
+    font-size: 1.2rem;
+  }
 }
+
+
 
 
 
