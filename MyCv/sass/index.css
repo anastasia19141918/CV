@@ -544,27 +544,48 @@ ul {
   cursor: pointer;
 }
 
-.projects__img {
+.projects__link {
   width: 151px;
   height: 220px;
   border-radius: 5px;
+  text-decoration: none;
 }
 @media (max-width: 360px) {
-  .projects__img {
+  .projects__link {
     width: 170px;
     height: 280px;
   }
 }
-
-.projects__desk-title {
-  margin: 0 0 10px 0;
-  font-size: 1.8rem;
-  text-transform: capitalize;
+.projects__link_img {
+  background-color: #04281E;
+}
+.projects__link_task {
+  background-color: #11213B;
+}
+.projects__link_songbird {
+  background-color: #EDA9AA;
+}
+.projects__link_art-quiz {
+  background-color: #687343;
+}
+.projects__link_eco-sounds {
+  background-color: #123924;
+}
+.projects__link_christmas-shop {
+  background-color: #9C2102;
 }
 
-.projects__desk-text {
-  margin: 0 0 0 0;
-  font-size: 1.2rem;
+.projects__link__title {
+  padding: 60% 0 0 10%;
+  font-size: 1.4rem;
+  color: #F29544;
+  text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  .projects__link__title {
+    padding: 60% 0 0 5%;
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
